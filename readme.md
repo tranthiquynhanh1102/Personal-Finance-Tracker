@@ -1,6 +1,7 @@
 # Finora - Personal Finance Tracker
 
 A lightweight web app to track personal income, expenses, and current balance.
+Here is it picture: <img src="blob:https://www.pinterest.com/fdde065b-7322-49f2-87f2-204c2df4f77c" alt="Finora">
 
 ## Demo & Usage
 
