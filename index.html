@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finora • Finance</title>
+    <title>Finora - Personal Finance Tracker</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
     <div class="container">
       <header>
         <h1>Finora</h1>
-        <p class="subtitle">Personal Finance Tracker</p>
+        <p class="subtitle">Budget & Expense Manager</p>
       </header>
 
       <!-- Summary Cards -->
@@ -26,25 +26,25 @@
         </div>
         <div class="card income-card">
           <div class="card-icon"><i class="fas fa-arrow-trend-up"></i></div>
-          <p class="label">Income</p>
+          <p class="label">Total Income</p>
           <h2 id="total-income" class="amount">0 $</h2>
         </div>
         <div class="card expense-card">
           <div class="card-icon"><i class="fas fa-arrow-trend-down"></i></div>
-          <p class="label">Expenses</p>
+          <p class="label">Total Expenses</p>
           <h2 id="total-expense" class="amount">0 $</h2>
         </div>
       </div>
 
       <!-- Add Transaction Form -->
       <div class="form-card">
-        <h3>Add New Transaction</h3>
+        <h3>New Transaction</h3>
         <form id="transaction-form">
           <div class="form-group">
             <input
               type="text"
               id="description"
-              placeholder="Description (e.g. June Salary)"
+              placeholder="Transaction description (e.g. Salary, Groceries)"
               required
             />
           </div>
@@ -53,7 +53,7 @@
               <input
                 type="number"
                 id="amount"
-                placeholder="Enter amount..."
+                placeholder="Amount ($)"
                 step="0.01"
                 min="0.01"
                 required
@@ -61,14 +61,14 @@
             </div>
             <div class="form-group">
               <select id="type" required>
-                <option value="">Type</option>
+                <option value="">Select type</option>
                 <option value="income">Income</option>
                 <option value="expense">Expense</option>
               </select>
             </div>
           </div>
           <button type="submit" class="submit-btn">
-            <i class="fas fa-plus"></i> Add Transaction
+            <i class="fas fa-plus"></i> Save Transaction
           </button>
         </form>
       </div>
@@ -76,7 +76,7 @@
       <!-- Transaction History -->
       <div class="history-card">
         <div class="history-header">
-          <h3>Transaction History</h3>
+          <h3>Recent Activity</h3>
           <button id="clear-all" class="clear-btn">
             <i class="fas fa-trash"></i> Clear All
           </button>
